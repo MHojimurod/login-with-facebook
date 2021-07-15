@@ -1,0 +1,12 @@
+
+<p class="login-box-msg">Sign In</p>
+
+<form method="post" action="">
+    {% csrf_token %}
+
+    <input type="text" class="form-control" name="username" placeholder="Username"><br>
+
+    <input type="password"  name="password" placeholder="Password"><br>
+    <button type="submit">Sign In</button>
+    <a href="{% url 'register' %}">Register</a>
+</form>
